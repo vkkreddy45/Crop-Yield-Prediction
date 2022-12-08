@@ -1,0 +1,124 @@
+html{
+  font-size: 100%;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  scroll-padding-top: 6rem;
+  }
+  
+/* CSS style for background display*/
+#main-title-area {
+  background-image: url("../static/2.png");
+  background-position: center 10%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 100vh;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#about-content-area {
+  background-image: linear-gradient(rgba(33, 41, 49, 0.8), rgba(30, 37, 45, 0.8)), url("../static/2.png");
+  background-position: center 10%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 100vh;
+  text-align: center;
+}
+
+
+/* CSS Style for home page data*/
+.banner {
+height: 90vh;
+margin-top: -30px;
+display: flex;
+justify-content: center;
+align-content: center;
+align-items: center;
+}
+
+.banner__title_head {
+text-align: center;
+font-weight: 600;
+font-size: 80px;
+color: #fff;
+margin-left: 10px;
+margin-right: 10px;
+padding-bottom: 10px;
+margin-bottom: 20px;
+border-bottom: 3px solid whitesmoke;
+}
+
+.banner__title_head font {
+color: tomato;
+}
+
+.banner__title_tail {
+text-align: center;
+margin-top: 10px;
+color: azure;
+margin-left: 10px;
+margin-right: 10px;
+}
+
+.banner__buttons {
+margin-top: 20px;
+display: flex;
+justify-content: space-evenly;
+flex-wrap: wrap;
+}
+
+.banner__button {
+color: white !important;
+background-color: rgb(0, 0, 0, 0.8) !important;
+padding: 10px !important;
+font-size: 14px !important;
+font-weight: 500 !important;
+margin-bottom: 10px !important;
+}
+
+/* CSS style for form section*/
+.form {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.form__form_group {
+  width: 600px;
+  opacity: 0.9;
+  display: flex;
+  flex-direction: column;
+}
+
+.form__text_field {
+  margin: 0 10px 5px 10px !important;
+  color: #fff !important;
+  background-color: whitesmoke !important;
+}
+
+.form__button {
+  margin: 10px !important;
+  padding: 10px !important;
+  font-size: 18px !important;
+  font-weight: 700 !important;
+}
+
+.form__title {
+  margin: 10px;
+  font-size: 35px;
+  font-weight: 700;
+  color: rgb(245, 239, 230);
+  background-color: rgba(0, 0, 0, 0.8);
+  padding: 19px;
+}
+
+.form-select {
+  padding: 16px 12px;
+  scroll-behavior: smooth;
+}
+
+.form-label{
+  color: darkred;
+}

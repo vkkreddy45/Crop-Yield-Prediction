@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Final Result of Crop Prediction</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+  <link rel="stylesheet" href="../static/style.css" />
+</head>
+
+<body>
+  <nav class="navbar navbar-dark bg-dark navbar-fixed-top navbar-inverse">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="/">Crop Yield<font style="color:tomato">UI</font></a>
+      <ul class="nav justify-content-end">
+        <li class="nav-item">
+          <a class="btn btn-outline-success" type="button" href="/" m>Home</a>
+        </li>
+        &nbsp;&nbsp;
+        <li class="nav-item">
+          <a class="btn btn-outline-success" type="button" href="/yielder">Yield Recommender</a>
+        </li>
+        &nbsp;&nbsp;
+        <li class="nav-item">
+          <a class="btn btn-outline-success" type="button" href="/about">About</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <section id="main-title-area" style='justify-content: center;padding-bottom: 33%'>
+    <form>
+      <fieldset>
+        <legend>RESULTS</legend>
+    <table class="table">
+      <tbody>
+        <tr>
+          <th scope="row">Yield Prediction</th>
+          <td>{{prediction}}</td>
+        </tr>
+        <tr>
+          <th scope="row">R2_score of Model</th>
+          <td>{{R2}}</td>
+        </tr>
+        <tr>
+          <th scope="row">Confidence Interval of Model</th>
+          <td>{{confidence}}</td>
+        </tr>
+      </tbody>
+    </table>
+  </fieldset>
+  </form>
+  <form onsubmit="setTimeout(function(){window.location.reload();},5);"></form>
+  </section>
+</body>
+</html>
